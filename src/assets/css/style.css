@@ -180,6 +180,7 @@ canvas {
 
 .client-logo img {
     object-fit: contain;
+    opacity: 0.8;
 }
 
 .hero-img-container {
