@@ -1,59 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/vite.svg" type="image/svg+xml" />
+
         <link rel="stylesheet" href="./src/assets/css/style.css" />
-        <title>Project</title>
+
+        <title>Deep Ocean — Rescue Beacon</title>
     </head>
 
     <body>
         <nav>
             <div class="nav-links">
-                <a href="#">Overview</a>
-                <a href="#">Solutions</a>
-                <a href="#">Resources</a>
+                <a href="#">Mission</a>
+                <a href="#">Signal</a>
+                <a href="#">Ocean</a>
             </div>
 
             <div class="logo">
-                <a href="#"> <img src="./src/assets/images/logo.png" alt="" /> <span>Beyond</span></a>
+                <a href="#">
+                    <span>ABYSS</span>
+                </a>
             </div>
 
             <div class="nav-buttons">
-                <div class="btn primary"><a href="#">Live Demo</a></div>
-                <div class="btn secondary"><a href="#">Get Started</a></div>
+                <div class="btn primary">
+                    <a href="#">Explore</a>
+                </div>
+
+                <div class="btn secondary">
+                    <a href="#">Dive In</a>
+                </div>
             </div>
         </nav>
 
         <section class="hero">
-            <canvas></canvas>
+            <div class="ocean-bg"></div>
+
+            <div class="ocean-glow"></div>
 
             <div class="hero-content">
                 <div class="header">
-                    <h1>Try this animation with cool vibes..</h1>
+                    <div class="eyebrow">01 / RESCUE BEACON</div>
 
-                    <p>Designed by</p>
+                    <h1>
+                        A signal<br />
+                        from the deep.
+                    </h1>
 
-                    <div class="client-logos">
-                        <div class="client-logo"><img src="./src/assets/images/icon-1.png" alt="" /></div>
-                        <div class="client-logo"><img src="./src/assets/images/icon-2.png" alt="" /></div>
-                        <div class="client-logo"><img src="./src/assets/images/icon-3.png" alt="" /></div>
-                        <div class="client-logo"><img src="./src/assets/images/icon-4.png" alt="" /></div>
+                    <p>
+                        Somewhere beneath the surface,<br />
+                        a light is still waiting.
+                    </p>
+
+                    <div class="coordinates">
+                        <span>41° 23' 18" N</span>
+                        <span>127° 42' 09" W</span>
                     </div>
                 </div>
             </div>
 
-            <div class="hero-img-container">
-                <div class="hero-img">
-                    <img src="./src/assets/images/hero.jpg" alt="" />
-                </div>
+            <div class="beacon-container">
+                <video
+                    class="beacon-video"
+                    muted
+                    playsinline
+                    preload="auto"
+                    src="./src/assets/videos/video.mp4"
+                ></video>
+            </div>
+
+            <div class="depth">
+                <span>DEPTH</span>
+                <strong>— 03800 M</strong>
+            </div>
+
+            <div class="signal">
+                <span class="signal-dot"></span>
+                <span>SIGNAL DETECTED</span>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO DESCEND</span>
+                <div class="scroll-line"></div>
             </div>
         </section>
 
         <section class="outro">
-            <h1>Join teams building faster with great ideas</h1>
+            <div>
+                <p>END OF DESCENT</p>
+                <h1>
+                    The signal<br />
+                    remains.
+                </h1>
+            </div>
         </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
