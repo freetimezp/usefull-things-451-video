@@ -1007,9 +1007,7 @@ section {
     .scroll-indicator {
         display: none;
     }
-}
 
-@media (max-width: 800px) {
     .mission-status {
         top: 6rem;
         left: 1.25rem;
@@ -1035,5 +1033,9 @@ section {
 
     .floating-coordinates {
         display: none;
+    }
+
+    .beacon-video {
+        aspect-ratio: 7 / 9;
     }
 }
