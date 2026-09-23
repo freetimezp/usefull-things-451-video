@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="./src/assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
 
         <title>Deep Ocean — Rescue Beacon</title>
     </head>
@@ -35,10 +35,34 @@
             </div>
         </nav>
 
+        <div class="dive-logo">
+            <div class="dive-logo-mark">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="dive-logo-text">
+                <strong>ABYSS</strong>
+                <span>DEEP SIGNAL / 07</span>
+            </div>
+        </div>
+
         <section class="hero">
             <div class="ocean-bg"></div>
 
             <div class="ocean-glow"></div>
+
+            <div class="particles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
             <div class="hero-content">
                 <div class="header">
@@ -61,13 +85,63 @@
                 </div>
             </div>
 
+            <!-- ATMOSPHERE UI -->
+
+            <div class="mission-status">
+                <span class="status-label">MISSION</span>
+                <span class="status-value">ABYSS / 07</span>
+            </div>
+
+            <div class="telemetry">
+                <div class="telemetry-row">
+                    <span>PRESSURE</span>
+                    <strong>380.4 BAR</strong>
+                </div>
+
+                <div class="telemetry-row">
+                    <span>TEMP</span>
+                    <strong>02.8°C</strong>
+                </div>
+
+                <div class="telemetry-row">
+                    <span>VISIBILITY</span>
+                    <strong>LOW</strong>
+                </div>
+            </div>
+
+            <div class="sonar-scale">
+                <span>0000</span>
+                <span>1000</span>
+                <span>2000</span>
+                <span>3000</span>
+                <span>3800</span>
+            </div>
+
+            <div class="sonar-line">
+                <span></span>
+            </div>
+
+            <div class="beacon-readout">
+                <span class="readout-ring"></span>
+
+                <div>
+                    <span>BEACON</span>
+                    <strong>ACTIVE</strong>
+                </div>
+            </div>
+
+            <div class="coordinates floating-coordinates">
+                <span>41° 23' 18" N</span>
+                <span>127° 42' 09" W</span>
+            </div>
+
             <div class="beacon-container">
                 <video
                     class="beacon-video"
                     muted
                     playsinline
                     preload="auto"
-                    src="./src/assets/videos/video.mp4"
+                    src="./assets/videos/video.mp4"
                 ></video>
             </div>
 
@@ -102,6 +176,6 @@
 
         <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
 
-        <script type="module" src="./src/assets/js/main.js"></script>
+        <script type="module" src="./assets/js/main.js"></script>
     </body>
 </html>
